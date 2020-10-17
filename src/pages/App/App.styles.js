@@ -12,6 +12,12 @@ export const Container = styled.main`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: 768px) {
+    grid-template: auto 1fr auto 3.25rem / 1fr 3fr;
+  }
+  @media (max-width: 480px) {
+    grid-template: auto .5fr auto / 1fr;
+  }
 `;
 
 export const Button = styled.button`
@@ -32,5 +38,11 @@ export const Button = styled.button`
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+  }
+  @media (max-width: 480px) {
+    bottom: 1.5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
   }
 `;

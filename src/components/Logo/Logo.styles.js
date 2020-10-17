@@ -11,4 +11,7 @@ export const LogoContainer = styled.div`
 export const LogoImage = styled.img`
   display: block;
   filter: drop-shadow(0 2.14px 2.14px rgba(0,0,0,.25));
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
