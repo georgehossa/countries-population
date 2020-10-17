@@ -23,7 +23,7 @@ const App = () => {
         .then((json) => setPics(json.results));
     }
     searchPhoto(country.name);
-  }, [country]);
+  }, [country, unsplash.search]);
 
   const randomCountry = () => {
     setCountry(countries[Math.floor(Math.random() *  countries.length)]);
