@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: grid;
   grid-column: 2 / -1;
   grid-row: 3 / 4;
-  grid-template: 1fr 1fr / repeat(3, 1fr);
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
   grid-template-areas: "name name ." "population change .";
   padding: 1rem;
   background-color: rgba(0,0,0,.65);
@@ -15,7 +15,9 @@ export const Name = styled.h1`
   align-items: center;
   grid-area: name;
   margin: 0;
+  padding-bottom: 1rem;
   font-size: 3.75rem;
+  line-height: 3.75rem;
   border-bottom: 1px solid white;
   color: white;
 `;
