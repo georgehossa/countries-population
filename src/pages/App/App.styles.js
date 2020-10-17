@@ -8,6 +8,10 @@ export const Container = styled.main`
   background: peru;
   margin: 0;
   padding: 0;
+  background-image: url(${props => props.bgImage});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const Button = styled.button`
